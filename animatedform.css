@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)), url(./images/erghero_4_1880x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 77.9vh; */
+    height: 92.7vh;
+    backdrop-filter: blur(10px);
+}
+
+form {
+    max-width: 25%;
+    background-color: rgba(95, 158, 160, 0.425);
+    margin:50px auto;
+    padding: 1px 20px 125px;
+    /* border: 1px solid red; */
+}
+
+fieldset {
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 0 20px;
+}
+
+legend {
+    border: 1px solid rgba(211, 210, 210, 0.678);
+    padding: 5px 3px;
+    color: #fff;
+}
+
+.input-data,
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+label, p, button, .link a{
+    color: #fff;
+}
+input {
+    height: 35px;
+    padding-left: 5px;
+    z-index: 1;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    background-color: rgba(95, 158, 160, 0.425);
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 7px 5px;
+}
+
+.btn:hover {
+    border-bottom: 2px solid black;
+    border-radius: 0 0 15px 15px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a:active {
+    color: purple;
+}
+.box{
+    border: 1px solid white;
+    width: 25%;
+    height: 70px;
+    margin-block: 30px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(0deg);
+    animation: box 1s ease-in-out 5s infinite alternate-reverse;
+ 
+}
+.box_one{
+    float: right;
+}
+@keyframes box{
+    0%{
+        transform: rotate(0deg);
+        color: gold;
+    }
+
+    100%{
+        transform: rotate(360deg);
+color: lightblue;
+    }
+}
+@media only screen and (max-width:430px) {
+    form{
+        display: none;
+        
+    }
+}
+@media only screen and (max-width:430px) {
+    form{
+        max-width: 100%;
+        min-width: 302px;
+        /* background-color: rgba(95, 158, 160, 0.425); */
+       border: 1px solid rebeccapurple;
+        margin:50px auto;
+        padding: 1px 20px 125px;
+    }
+}
